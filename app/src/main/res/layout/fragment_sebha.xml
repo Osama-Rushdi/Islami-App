@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_tasbeeh"
+    tools:context=".UI.MainActivity.SebhaFragment">
+
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginBottom="-13dp"
+        android:elevation="9.99dp"
+        android:src="@drawable/mask_group"
+        app:layout_constraintBottom_toTopOf="@+id/progressBar"
+        app:layout_constraintEnd_toEndOf="@+id/progressBar"
+        app:layout_constraintHorizontal_bias="0.837"
+        app:layout_constraintStart_toStartOf="@+id/progressBar" />
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/sebha"
+        android:elevation="10dp"
+        android:foregroundTint="@android:color/transparent"
+        android:indeterminate="false"
+        android:indeterminateOnly="false"
+        app:barrierDirection="bottom"
+        app:circularflow_viewCenter="@drawable/sebha"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintDimensionRatio="1:1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_percent=".42"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/zekrNameTV"
+        style="@style/Text24Gold"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="44dp"
+        android:layout_marginBottom="5dp"
+        android:gravity="center"
+        android:text="@string/sobhanAllah"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toTopOf="@+id/countZekrTV"
+        app:layout_constraintEnd_toEndOf="@+id/progressBar"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@+id/progressBar"
+        app:layout_constraintTop_toBottomOf="@+id/progressBar"
+        app:layout_constraintVertical_chainStyle="spread" />
+
+    <TextView
+        android:id="@+id/countZekrTV"
+        style="@style/Text24Gold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:gravity="center"
+        android:text="@string/_0"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toTopOf="@+id/progressBar"
+        app:layout_constraintEnd_toEndOf="@+id/zekrNameTV"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@+id/zekrNameTV"
+        app:layout_constraintTop_toBottomOf="@+id/zekrNameTV" />
+
+    <TextView
+        android:id="@+id/countFallAzkarTV"
+        style="@style/Text24Gold"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginBottom="-14dp"
+        android:background="@drawable/rectangle"
+        android:fontFamily="@font/technologybold"
+        android:gravity="center"
+        android:paddingHorizontal="26dp"
+        android:paddingVertical="8dp"
+        android:text="0"
+        android:textColor="@color/red"
+        android:textSize="35sp"
+        app:layout_constraintBottom_toTopOf="@+id/imageView3"
+        app:layout_constraintHeight_percent=".09"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintWidth_percent=".29" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/resetButton"
+        style="@style/Text20Gold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        android:backgroundTint="@color/selver"
+        android:text="@string/reset"
+        app:cornerRadius="12dp"
+        app:layout_constraintEnd_toEndOf="@+id/progressBar"
+        app:layout_constraintTop_toBottomOf="@+id/progressBar"
+        app:strokeColor="@color/GoldColor"
+        app:strokeWidth="2dp" />
+</androidx.constraintlayout.widget.ConstraintLayout>

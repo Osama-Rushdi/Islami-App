@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginHorizontal="24dp"
+    android:layout_marginVertical="12dp"
+    app:cardCornerRadius="24dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/GoldColor">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginHorizontal="20dp"
+            android:background="@drawable/hadith_card_background"
+            android:elevation="-100dp"
+            android:scaleType="fitCenter"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintHeight_percent=".6"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:layout_editor_absoluteX="20dp" />
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/mosqu_hadeeth_card"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHeight_percent=".15"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <TextView
+            android:id="@+id/HadeethTitleArTV"
+            style="@style/Text24lightblack"
+            android:layout_width="0dp"
+            android:layout_marginHorizontal="34dp"
+            android:gravity="center"
+
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="@+id/cornerRightIV"
+            app:layout_constraintEnd_toEndOf="@+id/cornerLiftIV"
+            app:layout_constraintStart_toStartOf="@+id/cornerRightIV"
+            app:layout_constraintTop_toTopOf="@+id/cornerRightIV"
+            tools:text="الفاتحه" />
+
+        <ImageView
+            android:id="@+id/cornerLiftIV"
+            android:layout_width="93dp"
+            android:layout_height="0dp"
+            android:layout_marginHorizontal="22dp"
+            android:adjustViewBounds="true"
+            android:src="@drawable/shape_corner_hadeth"
+            app:layout_constraintBottom_toBottomOf="@+id/cornerRightIV"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/cornerRightIV" />
+
+        <ImageView
+            android:id="@+id/cornerRightIV"
+            android:layout_width="93dp"
+            android:layout_height="0dp"
+            android:layout_marginStart="22dp"
+            android:layout_marginTop="22dp"
+            android:adjustViewBounds="true"
+            android:scaleX="-1"
+            android:src="@drawable/shape_corner_hadeth"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/HadeethContentTV"
+            style="@style/Text20lightblack"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginHorizontal="24dp"
+            android:gravity="center"
+            android:lineSpacingExtra="8dp"
+            app:layout_constraintBottom_toTopOf="@+id/imageView2"
+            app:layout_constraintTop_toBottomOf="@+id/cornerRightIV"
+            tools:layout_editor_absoluteX="24dp"
+            tools:text="الفاتحtggggggggggggggggggggggggggggggggtbه" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>

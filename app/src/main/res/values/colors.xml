@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="GoldColor">#E2BE7F</color>
+    <color name="lightBlack">#202020</color>
+    <color name="red">#E90707</color>
+    <color name="selver">#B65B5757</color>
+</resources>
