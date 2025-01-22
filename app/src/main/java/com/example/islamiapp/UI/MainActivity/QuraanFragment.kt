@@ -16,8 +16,6 @@ import com.example.islamiapp.databinding.FragmentQuraanBinding
 object Constants {
     const val POSITION_QURAAN = "positionQuraan"
     const val POSITION_HADEETH = "positionHadeeth"
-
-
 }
 
 class QuraanFragment : Fragment() {
